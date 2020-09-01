@@ -201,7 +201,6 @@ export default {
           return this.$message.error('获取静态属性失败!')
         }
         this.onlyTableData = res.data
-        console.log(res.data)
       }
     },
     // 处理图片预览效果
@@ -217,7 +216,6 @@ export default {
       const i = this.addForm.pics.findIndex(x => x.pic === filePath)
       // 3.调用数组的splice方法,把图片信息对象从pics数组中移除
       this.addForm.pics.splice(i, 1)
-      console.log(this.addForm)
     },
     // 监听图片上传成功的事件
     handleSuccess (response) {
